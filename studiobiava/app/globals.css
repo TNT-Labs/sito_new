@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: 0 0% 10%;
+  --background: 0 0% 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: 0 0% 95%;
+    --background: 0 0% 10%;
+  }
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Container */
+.container {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+/* Button styles */
+.btn {
+  @apply inline-flex items-center justify-center rounded-lg px-6 py-3 font-semibold transition-all duration-200;
+}
+
+.btn-primary {
+  @apply bg-primary-600 text-white hover:bg-primary-700 active:bg-primary-800;
+}
+
+.btn-secondary {
+  @apply border-2 border-primary-600 text-primary-600 hover:bg-primary-50;
+}
+
+/* Card */
+.card {
+  @apply rounded-xl bg-white p-6 shadow-lg transition-shadow hover:shadow-xl;
+}
+
+/* Section spacing */
+.section {
+  @apply py-16 md:py-24;
+}

@@ -1,0 +1,17 @@
+{
+  "contatti": {
+    "indirizzo": "Via Esempio, 123 - 12345 Città (PR)",
+    "telefono": "+39 XXX XXX XXXX",
+    "email": "info@studiobiava.com",
+    "pec": "studiobiava@pec.it"
+  },
+  "orari": {
+    "lunVen": "9:00 - 12:30 / 14:30 - 18:00",
+    "sabato": "Su appuntamento",
+    "note": "Consigliamo di contattarci per fissare un appuntamento e garantire la massima disponibilità del nostro staff."
+  },
+  "social": {
+    "facebook": "https://facebook.com/studiobiava",
+    "linkedin": "https://linkedin.com/company/studiobiava"
+  }
+}
